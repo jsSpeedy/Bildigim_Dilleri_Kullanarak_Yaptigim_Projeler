@@ -1,0 +1,22 @@
+@media (max-width: 992px) {
+  #selected__work .selected-card {
+    max-width: 180px;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  #selected__work .selected-card h2 {
+    margin: 5px 0 !important;
+  }
+}
+
+@media (max-width: 576px) {
+  #selected__work .selected-card {
+    max-width: 130px;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+
+  #selected__work .selected-card h2 {
+    margin: 0 !important;
+  }
+}

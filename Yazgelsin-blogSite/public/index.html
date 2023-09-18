@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Yaz Gelsin</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="">
+    <header>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Yaz Gelsin
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav">
+                <li class="nav-item overflow" id="arts">
+                  <a
+                    href="#"
+                    class="nav-link"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#artsOffcanvas"
+                    >Sanat</a
+                  >
+                </li>
+                <li class="nav-item" id="technology">
+                  <a
+                    href="#"
+                    class="nav-link"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#technologyOffcanvas"
+                    >Teknoloji</a
+                  >
+                </li>
+                <li class="nav-item" id="science">
+                  <a
+                    href="#"
+                    class="nav-link"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#scienceOffcanvas"
+                    >Bilim</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <ul class="navbar-nav logo">
+            <li class="nav-item">
+              <a href="#" class="nav-link navbar-brand">Yaz Gelsin</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav loginSearch">
+            <li class="nav-item me-3 me-md-0 searchBlog">
+              <a href="#" class="nav-link"
+                ><i class="fa-solid fa-magnifying-glass"></i>
+                <span class="d-none d-md-inline">Blog Ara</span></a
+              >
+            </li>
+
+            <li class="nav-item" id="loginBlog">
+              <a
+                href="#"
+                class="nav-link"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#loginOffcanvas"
+                ><i class="fa-solid fa-right-to-bracket me-1"></i>
+                <span class="d-none d-md-inline">Giriş Yap</span></a
+              >
+            </li>
+
+            <li class="dropdown nav-item" id="createBlog">
+              <button class="dropbtn" class="nav-link">
+                <i class="fa-solid fa-user"></i>
+                <span>Hesabım</span>
+              </button>
+              <div class="dropdown-content">
+                <a
+                  href="#"
+                  class="nav-link"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#blogOffcanvas"
+                  ><i class="fa-solid fa-blog"></i> <span>Blog Oluştur</span></a
+                >
+                <a href="index.html" class="nav-link"
+                  ><i class="fa-solid fa-right-to-bracket me-1"></i>
+                  <span>Çıkış Yap</span></a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- carousel -->
+      <div
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+        id="slider1"
+      >
+        <div class="carousel-inner">
+          <!-- data-bs-interval="2000" = geçiş süresini ayarlar -->
+          <div class="carousel-item active" data-bs-interval="10000">
+            <video autoplay loop muted playsinline>
+              <source src="img/sanat.mp4" type="video/mp4" />
+            </video>
+            <!-- carousel-caption = slider içerisine içerik eklenen kısım başlık yazı vs -->
+            <div class="carousel-caption">
+              <small class="badge">SANAT</small>
+              <h2>Sen Yaz Biz Okuyalım</h2>
+              <p class="m-0">
+                Sanat ile ilgili istediğin bir konuda blog mu yazmak istiyorsun?
+              </p>
+              <p>
+                Ozaman sen yaz biz okuyalım haydi daha ne duruyorsun yaz gelsin.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <video autoplay loop muted playsinline>
+              <source src="img/teknoloji.mp4" type="video/mp4" />
+            </video>
+            <!-- carousel-caption = slider içerisine içerik eklenen kısım başlık yazı vs -->
+            <div class="carousel-caption">
+              <small class="badge">TEKNOLOJİ</small>
+              <h2>Sen Yaz Biz Okuyalım</h2>
+              <p class="m-0">
+                Teknoloji ile ilgili istediğin bir konuda blog mu yazmak
+                istiyorsun?
+              </p>
+              <p>
+                Ozaman sen yaz biz okuyalım haydi daha ne duruyorsun yaz gelsin.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <video autoplay loop muted playsinline>
+              <source src="img/bilim (2).mp4" type="video/mp4" />
+            </video>
+
+            <!-- carousel-caption = slider içerisine içerik eklenen kısım başlık yazı vs -->
+            <div class="carousel-caption">
+              <small class="badge">BİLİM</small>
+              <h2>Sen Yaz Biz Okuyalım</h2>
+              <p class="m-0">
+                Bilim ile ilgili istediğin bir konuda blog mu yazmak istiyorsun?
+              </p>
+              <p>
+                Ozaman sen yaz biz okuyalım haydi daha ne duruyorsun yaz gelsin.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <ol class="carousel-indicators list-unstyled">
+          <li
+            data-bs-target="#slider1"
+            data-bs-slide-to="0"
+            class="active"
+          ></li>
+          <li data-bs-target="#slider1" data-bs-slide-to="1"></li>
+          <li data-bs-target="#slider1" data-bs-slide-to="2"></li>
+        </ol>
+
+        <a href="#slider1" class="carousel-control-prev" data-bs-slide="prev">
+          <!-- geri ok tuşu ikonu  -->
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#slider1" class="carousel-control-next" data-bs-slide="next">
+          <!-- ileri ok tuşu ikonu  -->
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </header>
+
+    <!-- login -->
+    <section
+      class="offcanvas offcanvas-start w-100"
+      data-bs-backdrop="false"
+      id="loginOffcanvas"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+
+      <div class="container">
+        <div class="login-container">
+          <div class="box signin">
+            <h2>Zaten hesabınız var mı ?</h2>
+            <button class="signinBtn" id="signinBtn">Giriş</button>
+          </div>
+          <div class="box signup">
+            <h2>Hesabınız yok mu ?</h2>
+            <button class="signupBtn">Kayıt Ol</button>
+          </div>
+
+          <div class="formBx">
+            <div class="form signinForm">
+              <form id="loginForm">
+                <h3>Giriş</h3>
+                <input type="text" placeholder="Kullanıcı Adı" id="loginName" />
+                <input
+                  type="password"
+                  placeholder="Parola"
+                  id="loginPassword"
+                />
+                <input type="submit" value="Giriş" id="login" />
+                <a href="#" class="forgot">Parola mı unuttum</a>
+              </form>
+            </div>
+            <div class="form signupForm">
+              <form id="registerForm">
+                <h3>Kayıt Ol</h3>
+                <input type="text" placeholder="Kullanıcı Adı" id="username" />
+                <input type="email" placeholder="Email adres" id="email" />
+                <input type="password" placeholder="Parola" id="password" />
+                <input
+                  type="password"
+                  placeholder="Parola Tekrar"
+                  id="passwordAgain"
+                />
+                <input type="submit" value="Kayıt Ol" id="register" />
+                <a href="#" class="forgot">Parola mı unuttum</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- blog -->
+    <section
+      id="blogOffcanvas"
+      class="offcanvas offcanvas-start w-100 text-light h-100"
+      data-bs-backdrop="false"
+    >
+      <header id="header__inner">
+        <nav class="navbar navbar-expand-md navbar-dark">
+          <div class="container">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasNavbar"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  Yaz Gelsin
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Sanat</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Teknoloji</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Bilim</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <ul class="navbar-nav logo">
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link navbar-brand"
+                  data-bs-dismiss="offcanvas"
+                  >Yaz Gelsin</a
+                >
+              </li>
+            </ul>
+
+            <ul class="navbar-nav myAccount">
+              <li class="nav-item me-3">
+                <a href="#" class="nav-link"><span id="user"></span></a>
+              </li>
+              <li class="nav-item d-inline">
+                <a class="nav-link" data-bs-dismiss="offcanvas"
+                  ><i class="fa-solid fa-xmark"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div class="container">
+        <div class="offcanvas-header justify-content-center mt-5">
+          <h1 class="text-center">Kendi Bloğunu Oluştur</h1>
+        </div>
+        <div class="row my-5">
+          <div class="col-lg-8 col-12">
+            <div class="blog">
+              <form>
+                <div class="mb-3">
+                  <label for="blogUserName" class="form-label"
+                    >Kullanıcı adınızı girin</label
+                  >
+                  <input type="text" class="form-control" id="blogUserName" />
+                </div>
+
+                <div class="mb-3">
+                  <label for="blogCategory" class="form-label"
+                    >Bloğunuzun kategorisini belirleyin</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="blogCategory"
+                    placeholder="Örneğin: sanat, bilim ve teknoloji"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="blogTitle" class="form-label"
+                    >Bloğunuzun başlığını belirleyin</label
+                  >
+                  <input type="text" class="form-control" id="blogTitle" />
+                </div>
+                <div class="mb-3">
+                  <label for="blogText" class="form-label"
+                    >Bloğunuza etkili bir giriş yazın</label
+                  >
+                  <textarea id="blogText" name="blogText"></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="blogProfilImage" class="form-label"
+                    >Profil fotoğrafınızı yükleyin</label
+                  >
+                  <input
+                    type="file"
+                    class="form-control"
+                    id="blogProfilImage"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="blogImage" class="form-label"
+                    >Bloğunuzla ilgili görsel yükleyin</label
+                  >
+                  <input type="file" class="form-control" id="blogImage" />
+                </div>
+
+                <div class="mb-3">
+                  <button
+                    type="submit"
+                    id="btnAddNewBlog"
+                    class="btn btn-light w-100 fw-bold"
+                  >
+                    Bloğunuzu Ekleyin
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-12 my-5 my-lg-0">
+            <div class="card aboutUs">
+              <div class="card-header">
+                <img src="img/yaz gelsin.jpg " class="img-fluid mt-2 w-100" />
+              </div>
+
+              <div class="card-body text-center">
+                <h5 class="card-title mt-2">Biz Kimiz?</h5>
+                <div class="card-text">
+                  <p class="mt-3">
+                    Yaz Gelsin'e hoş geldiniz sevgili blog yazıcıları. Biz
+                    Herkesin görüşüne, bilgisine, hikayelerine ve içeriklerine
+                    önem veren bir topluluğuz. Misyonumuz içinizde olan o blog
+                    yazıcılığı ruhunuzu herkesle paylaşmak ve o konu hakkında
+                    saygı içerisinde tartışmak. Vizyonumuz kendi bloğunuzu
+                    oluşturup siz değerli blog yazıcılarını farklı konularda
+                    bilgi sahibi olmak.
+                  </p>
+                  <p class="mt-4">Kendi bloğunu yazan seçkin ruhlar...</p>
+                  <p class="mt-4">Daha ne duruyorsun yaz gelsin ozaman</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer id="main-footer" class="text-light mt-auto">
+        <div class="container">
+          <div class="footer-container">
+            <div class="d-flex">
+              <div class="logo">
+                <ul class="list-inline list-group-flush">
+                  <li class="list-inline-item"><a href="#">Yaz Gelsin</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-item">
+                <ul class="list-inline list-group-flush">
+                  <li class="list-inline-item">
+                    <a
+                      href="#"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#artsOffcanvas"
+                      >Sanat</a
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      href="#"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#technologyOffcanvas"
+                      >Teknoloji</a
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      href="#"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#scienceOffcanvas"
+                      >Bilim</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer-social">
+              <ul class="list-inline list-group-flush">
+                <li class="list-inline-item">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <div class="copyright">
+            <p>© 2023 Tüm Hakları Saklıdır – Yazgelsin.com</p>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <!--index content -->
+    <section id="content" class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-12">
+            <div class="row">
+              <div class="col-12">
+                <a href="#" class="category">
+                  <div class="card text-bg-dark">
+                    <img
+                      src="img/yıldızlı gece.jpg"
+                      class="card-img img-fluid"
+                      alt="yıldızlı gece"
+                    />
+                    <div class="card-img-overlay d-flex flex-column">
+                      <span>Sanat</span>
+
+                      <div class="row mt-auto">
+                        <div class="col-12">
+                          <h5 class="card-title mb-4">
+                            Nöroestetik: Sanat Beyni Nasıl Dönüştürür?
+                          </h5>
+                          <div class="d-none d-md-block">
+                            <p class="card-text">
+                              Sanat, insanlık tarihinde her zaman merak edilmiş
+                              ve araştırılmış bir konu olmuştur. Hem sanat
+                              eserlerinin güzelliği ve anlamı hem de bunların
+                              insan zihninde nasıl değişikliklere yol açtığı,
+                              ilgi odağı olmuştur. Son yıllarda, nöroestetik
+                              adını verdiğimiz disiplin, sanatın insan beyni
+                              üzerindeki etkilerini bilimsel bir bakış açısıyla
+                              incelemeye yönelik çalışmaları içermektedir. Bu
+                              yazıda, nöroestetiğin sanatın beyin üzerindeki
+                              dönüştürücü etkilerini nasıl keşfettiğini ve insan
+                              zihnini nasıl şekillendirdiğini inceleyeceğiz.
+                            </p>
+                            <p class="card-text mt-4 card-information">
+                              <small
+                                ><img
+                                  src="img/profil.jpg"
+                                  alt="emreaydin"
+                                  class="card-profil"
+                              /></small>
+                              <small>by emreaydin</small>
+                              <small
+                                ><i class="fa-regular fa-comment-dots"></i
+                              ></small>
+                              <small>Ağustos 15, 2023</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xl-6 col-12 cols">
+                <div class="card">
+                  <a href="#" class="category">
+                    <img
+                      src="img/yapayzeka.jpeg"
+                      alt="yapay zeka"
+                      class="card-img-top"
+                    />
+                    <span>Teknoloji</span>
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a href="#">
+                        Yapay Zeka Uygulamaları ve Robotlar: Teknolojinin Yeni
+                        Dönemi
+                      </a>
+                    </h5>
+                    <div class="card-text">
+                      Merhaba sevgili okuyucular! Gelin, bugün teknolojinin en
+                      heyecan verici alanlarından biri olan yapay zeka
+                      uygulamaları ve robotlar dünyasına birlikte dalalım. Evet,
+                      evet, o öyle bilim kurgu filmlerinde gördüğümüz, hayal
+                      ettiğimiz gelecek burada ve gerçek!
+                    </div>
+                    <p class="card-text mt-4">
+                      <small
+                        ><img
+                          src="img/profil.jpg"
+                          alt="emreaydin"
+                          class="card-profil"
+                      /></small>
+                      <small>by emreaydin</small>
+                      <small><i class="fa-regular fa-comment-dots"></i></small>
+                      <small>Ağustos 15, 2023</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-12 cols">
+                <div class="card">
+                  <a href="#" class="category">
+                    <img
+                      src="img/füzyon.png"
+                      alt="yapay zeka"
+                      class="card-img-top"
+                    />
+                    <span>Bilim</span>
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a href="#">
+                        Nihayet Başarılan "Füzyon Ateşlemesi" Gerçekten Devrim
+                        mi?
+                      </a>
+                    </h5>
+                    <div class="card-text">
+                      Son bir iki gündür nükleer füzyon devrimi haberlerini
+                      duymuşsunuzdur. Bu gerçekten müthiş bir başarı ama işler
+                      haberlerde heleki Türkiyedeki gazetelerin haber
+                      köşelerinde yazıldığı gibi değil. Gelin başarılarının tam
+                      olarak ne olduğuna ve evlerimizin ne zaman füzyon
+                      reaktörüyle ısıtmaya başlayacağımıza bir bakış atalım.
+                    </div>
+                    <p class="card-text mt-4">
+                      <small
+                        ><img
+                          src="img/profil.jpg"
+                          alt="emreaydin"
+                          class="card-profil"
+                      /></small>
+                      <small>by emreaydin</small>
+                      <small><i class="fa-regular fa-comment-dots"></i></small>
+                      <small>Ağustos 15, 2023</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 cols">
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-4 category">
+                      <a id="image" href="#" class="category">
+                        <img
+                          src="img/kisiselgelisim.jpeg"
+                          class="img-fluid rounded-start img"
+                        />
+                        <span>Verimlilik</span>
+                      </a>
+                    </div>
+
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          <a href="#">
+                            Sessiz Kalarak İnsanları Nasıl Etkilersin ve Saygı
+                            Duymalarını Sağlarsın?
+                          </a>
+                        </h5>
+                        <p class="card-text">
+                          Merhaba sevgili dostum. Genelde insanları etkilemek
+                          konusu mevzu bahis olduğu zaman daha çok konuşmak,
+                          daha çok kendini ifade etmek söz konusu oluyor verilen
+                          önerilen bu taraftan oluyor. Ben bugün birazcık
+                          tersini söylemek istiyorum sana. Sessiz kalarak geride
+                          kalarak nasıl diğer insanları etkileyebilirsin. Ben
+                          şuna çok inanıyorum kendini anlatarak değil daha fazla
+                          konuşarak değil bazen geri durman gereken bazen
+                          reddetmen gereken noktalarda konumlandırdığın zaman
+                          diğer insanların gözünde daha saygı değer daha güçlü
+                          ve bambaşka karizmatik insan olman mümkün hazırsan
+                          başlayalım.
+                        </p>
+                        <p class="card-text mt-4">
+                          <small
+                            ><img
+                              src="img/profil.jpg"
+                              alt="emreaydin"
+                              class="card-profil"
+                          /></small>
+                          <small>by emreaydin</small>
+                          <small
+                            ><i class="fa-regular fa-comment-dots"></i
+                          ></small>
+                          <small>Ağustos 15, 2023</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="contentBlogAdd" class="row"></div>
+          </div>
+
+          <div class="col-lg-4 col-12 cols-aboutUs">
+            <div class="card aboutUs">
+              <div class="card-header">
+                <img src="img/yaz gelsin.jpg " class="img-fluid mt-2 w-100" />
+              </div>
+
+              <div class="card-body text-center">
+                <h5 class="card-title mt-2">Biz Kimiz?</h5>
+                <div class="card-text">
+                  <p class="mt-3">
+                    Yaz Gelsin'e hoş geldiniz sevgili blog yazıcıları. Biz
+                    Herkesin görüşüne, bilgisine, hikayelerine ve içeriklerine
+                    önem veren bir topluluğuz. Misyonumuz içinizde olan o blog
+                    yazıcılığı ruhunuzu herkesle paylaşmak ve o konu hakkında
+                    saygı içerisinde tartışmak. Vizyonumuz kendi bloğunuzu
+                    oluşturup siz değerli blog yazıcılarını farklı konularda
+                    bilgi sahibi olmak.
+                  </p>
+                  <p class="mt-4">Kendi bloğunu yazan seçkin ruhlar...</p>
+                  <p class="mt-4">Daha ne duruyorsun yaz gelsin ozaman</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- arts content -->
+    <section
+      id="artsOffcanvas"
+      class="offcanvas offcanvas-start w-100 text-light h-100"
+      data-bs-backdrop="false"
+    >
+      <header id="header__inner">
+        <nav class="navbar navbar-expand-md navbar-dark">
+          <div class="container">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasNavbar"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  Yaz Gelsin
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a
+                      href="#"
+                      class="nav-link"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#artsOffcanvas"
+                      >Sanat</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="#"
+                      class="nav-link"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#technologyOffcanvas"
+                      >Teknoloji</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="#"
+                      class="nav-link"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#scienceOffcanvas"
+                      >Bilim</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <ul class="navbar-nav logo">
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link navbar-brand"
+                  data-bs-dismiss="offcanvas"
+                  >Yaz Gelsin</a
+                >
+              </li>
+            </ul>
+
+            <ul class="navbar-nav myAccount">
+              <li class="nav-item me-3">
+                <a href="#" class="nav-link"><span id="user"></span></a>
+              </li>
+              <li class="nav-item d-inline">
+                <a class="nav-link" data-bs-dismiss="offcanvas"
+                  ><i class="fa-solid fa-xmark"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div
+        id="offcanvasCarousel"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <!-- data-bs-interval="2000" = geçiş süresini ayarlar -->
+          <div class="carousel-item active" data-bs-interval="8000">
+            <video autoplay loop muted playsinline>
+              <source src="img/sanat.mp4" type="video/mp4" />
+            </video>
+
+            <div class="carousel-caption badge">
+              <h2 class="badge">SANAT</h2>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="8000">
+            <video autoplay loop muted playsinline>
+              <source src="img/sanat-2.mp4" type="video/mp4" />
+            </video>
+            <div class="carousel-caption badge">
+              <h2 class="badge">SANAT</h2>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="8000">
+            <video autoplay loop muted playsinline>
+              <source src="img/sanat-3.mp4" type="video/mp4" />
+            </video>
+            <div class="carousel-caption badge">
+              <h2 class="badge">SANAT</h2>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="#offcanvasCarousel"
+          class="carousel-control-prev"
+          data-bs-slide="prev"
+        >
+          <!-- geri ok tuşu ikonu  -->
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a
+          href="#offcanvasCarousel"
+          class="carousel-control-next"
+          data-bs-slide="next"
+        >
+          <!-- ileri ok tuşu ikonu  -->
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+
+      <div class="container">
+        <div class="row my-5">
+          <div class="col-lg-8 col-12">
+            <div class="row">
+              <div class="col-12">
+                <a href="#" class="category">
+                  <div class="card text-bg-dark">
+                    <img
+                      src="img/yıldızlı gece.jpg"
+                      class="card-img img-fluid"
+                      alt="yıldızlı gece"
+                    />
+                    <div class="card-img-overlay d-flex flex-column">
+                      <span>Sanat</span>
+
+                      <div class="row mt-auto">
+                        <div class="col-12">
+                          <h5 class="card-title mb-4">
+                            Nöroestetik: Sanat Beyni Nasıl Dönüştürür?
+                          </h5>
+                          <div class="d-none d-md-block">
+                            <p class="card-text">
+                              Sanat, insanlık tarihinde her zaman merak edilmiş
+                              ve araştırılmış bir konu olmuştur. Hem sanat
+                              eserlerinin güzelliği ve anlamı hem de bunların
+                              insan zihninde nasıl değişikliklere yol açtığı,
+                              ilgi odağı olmuştur. Son yıllarda, nöroestetik
+                              adını verdiğimiz disiplin, sanatın insan beyni
+                              üzerindeki etkilerini bilimsel bir bakış açısıyla
+                              incelemeye yönelik çalışmaları içermektedir. Bu
+                              yazıda, nöroestetiğin sanatın beyin üzerindeki
+                              dönüştürücü etkilerini nasıl keşfettiğini ve insan
+                              zihnini nasıl şekillendirdiğini inceleyeceğiz.
+                            </p>
+                            <p class="card-text mt-4 card-information">
+                              <small
+                                ><img
+                                  src="img/profil.jpg"
+                                  alt="emreaydin"
+                                  class="card-profil"
+                              /></small>
+                              <small>by emreaydin</small>
+                              <small
+                                ><i class="fa-regular fa-comment-dots"></i
+                              ></small>
+                              <small>Ağustos 15, 2023</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-12 my-5 my-lg-0">
+            <div class="card aboutUs">
+              <div class="card-header">
+                <img src="img/yaz gelsin.jpg " class="img-fluid mt-2 w-100" />
+              </div>
+
+              <div class="card-body text-center">
+                <h5 class="card-title mt-2">Biz Kimiz?</h5>
+                <div class="card-text">
+                  <p class="mt-3">
+                    Yaz Gelsin'e hoş geldiniz sevgili blog yazıcıları. Biz
+                    Herkesin görüşüne, bilgisine, hikayelerine ve içeriklerine
+                    önem veren bir topluluğuz. Misyonumuz içinizde olan o blog
+                    yazıcılığı ruhunuzu herkesle paylaşmak ve o konu hakkında
+                    saygı içerisinde tartışmak. Vizyonumuz kendi bloğunuzu
+                    oluşturup siz değerli blog yazıcılarını farklı konularda
+                    bilgi sahibi olmak.
+                  </p>
+                  <p class="mt-4">Kendi bloğunu yazan seçkin ruhlar...</p>
+                  <p class="mt-4">Daha ne duruyorsun yaz gelsin ozaman</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer id="main-footer" class="text-light mt-auto">
+        <div class="container">
+          <div class="footer-container">
+            <div class="d-flex">
+              <div class="logo">
+                <ul class="list-inline list-group-flush">
+                  <li class="list-inline-item"><a href="#">Yaz Gelsin</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-item">
+                <ul class="list-inline list-group-flush">
+                  <li class="list-inline-item">
+                    <a
+                      href="#"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#artsOffcanvas"
+                      >Sanat</a
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      href="#"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#technologyOffcanvas"
+                      >Teknoloji</a
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      href="#"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#scienceOffcanvas"
+                      >Bilim</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer-social">
+              <ul class="list-inline list-group-flush">
+                <li class="list-inline-item">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <div class="copyright">
+            <p>© 2023 Tüm Hakları Saklıdır – Yazgelsin.com</p>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <!-- technology content -->
+    <section
+      id="technologyOffcanvas"
+      class="offcanvas offcanvas-start w-100 text-light h-100"
+      data-bs-backdrop="false"
+    >
+      <header id="header__inner">
+        <nav class="navbar navbar-expand-md navbar-dark">
+          <div class="container">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasNavbar"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  Yaz Gelsin
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a
+                      href="#"
+                      class="nav-link"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#artsOffcanvas"
+                      >Sanat</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="#"
+                      class="nav-link"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#technologyOffcanvas"
+                      >Teknoloji</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="#"
+                      class="nav-link"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#scienceOffcanvas"
+                      >Bilim</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <ul class="navbar-nav logo">
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link navbar-brand"
+                  data-bs-dismiss="offcanvas"
+                  >Yaz Gelsin</a
+                >
+              </li>
+            </ul>
+
+            <ul class="navbar-nav myAccount">
+              <li class="nav-item me-3">
+                <a href="#" class="nav-link"><span id="user"></span></a>
+              </li>
+              <li class="nav-item d-inline">
+                <a class="nav-link" data-bs-dismiss="offcanvas"
+                  ><i class="fa-solid fa-xmark"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div
+        id="offcanvasCarousel"
+        class="carousel slide carousel-fade offcanvasCarousel"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <!-- data-bs-interval="2000" = geçiş süresini ayarlar -->
+          <div class="carousel-item active" data-bs-interval="8000">
+            <video autoplay loop muted playsinline>
+              <source src="img/teknoloji.mp4" type="video/mp4" />
+            </video>
+
+            <div class="carousel-caption badge">
+              <h2 class="badge">TEKNOLOJİ</h2>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="8000">
+            <video autoplay loop muted playsinline>
+              <source src="img/teknoloji-2.mp4" type="video/mp4" />
+            </video>
+            <div class="carousel-caption badge">
+              <h2 class="badge">TEKNOLOJİ</h2>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="8000">
+            <video autoplay loop muted playsinline>
+              <source src="img/teknoloji-3.mp4" type="video/mp4" />
+            </video>
+            <div class="carousel-caption badge">
+              <h2 class="badge">TEKNOLOJİ</h2>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href=".offcanvasCarousel"
+          class="carousel-control-prev"
+          data-bs-slide="prev"
+        >
+          <!-- geri ok tuşu ikonu  -->
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a
+          href=".offcanvasCarousel"
+          class="carousel-control-next"
+          data-bs-slide="next"
+        >
+          <!-- ileri ok tuşu ikonu  -->
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+
+      <div class="container">
+        <div class="row my-5">
+          <div class="col-lg-8 col-12">
+            <div class="row">
+              <div class="col-12 cols">
+                <div class="card">
+                  <a href="#" class="category">
+                    <img
+                      src="img/yapayzeka.jpeg"
+                      alt="yapay zeka"
+                      class="card-img-top"
+                    />
+                    <span>Teknoloji</span>
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a href="#">
+                        Yapay Zeka Uygulamaları ve Robotlar: Teknolojinin Yeni
+                        Dönemi
+                      </a>
+                    </h5>
+                    <div class="card-text">
+                      Merhaba sevgili okuyucular! Gelin, bugün teknolojinin en
+                      heyecan verici alanlarından biri olan yapay zeka
+                      uygulamaları ve robotlar dünyasına birlikte dalalım. Evet,
+                      evet, o öyle bilim kurgu filmlerinde gördüğümüz, hayal
+                      ettiğimiz gelecek burada ve gerçek!
+                    </div>
+                    <p class="card-text mt-4">
+                      <small
+                        ><img
+                          src="img/profil.jpg"
+                          alt="emreaydin"
+                          class="card-profil"
+                      /></small>
+                      <small>by emreaydin</small>
+                      <small><i class="fa-regular fa-comment-dots"></i></small>
+                      <small>Ağustos 15, 2023</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="contentBlogAdd" class="row"></div>
+          </div>
+
+          <div class="col-lg-4 col-12 my-5 my-lg-0">
+            <div class="card aboutUs">
+              <div class="card-header">
+                <img src="img/yaz gelsin.jpg " class="img-fluid mt-2 w-100" />
+              </div>
+
+              <div class="card-body text-center">
+                <h5 class="card-title mt-2">Biz Kimiz?</h5>
+                <div class="card-text">
+                  <p class="mt-3">
+                    Yaz Gelsin'e hoş geldiniz sevgili blog yazıcıları. Biz
+                    Herkesin görüşüne, bilgisine, hikayelerine ve içeriklerine
+                    önem veren bir topluluğuz. Misyonumuz içinizde olan o blog
+                    yazıcılığı ruhunuzu herkesle paylaşmak ve o konu hakkında
+                    saygı içerisinde tartışmak. Vizyonumuz kendi bloğunuzu
+                    oluşturup siz değerli blog yazıcılarını farklı konularda
+                    bilgi sahibi olmak.
+                  </p>
+                  <p class="mt-4">Kendi bloğunu yazan seçkin ruhlar...</p>
+                  <p class="mt-4">Daha ne duruyorsun yaz gelsin ozaman</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer id="main-footer" class="text-light mt-auto">
+        <div class="container">
+          <div class="footer-container">
+            <div class="d-flex">
+              <div class="logo">
+                <ul class="list-inline list-group-flush">
+                  <li class="list-inline-item"><a href="#">Yaz Gelsin</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-item">
+                <ul class="list-inline list-group-flush">
+                  <li class="list-inline-item">
+                    <a
+                      href="#"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#artsOffcanvas"
+                      >Sanat</a
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      href="#"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#technologyOffcanvas"
+                      >Teknoloji</a
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      href="#"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#scienceOffcanvas"
+                      >Bilim</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer-social">
+              <ul class="list-inline list-group-flush">
+                <li class="list-inline-item">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <div class="copyright">
+            <p>© 2023 Tüm Hakları Saklıdır – Yazgelsin.com</p>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <!-- science content -->
+    <section
+      id="scienceOffcanvas"
+      class="offcanvas offcanvas-start w-100 text-light h-100"
+      data-bs-backdrop="false"
+    >
+      <header id="header__inner">
+        <nav class="navbar navbar-expand-md navbar-dark">
+          <div class="container">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasNavbar"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  Yaz Gelsin
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a
+                      href="#"
+                      class="nav-link"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#artsOffcanvas"
+                      >Sanat</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="#"
+                      class="nav-link"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#technologyOffcanvas"
+                      >Teknoloji</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="#"
+                      class="nav-link"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#scienceOffcanvas"
+                      >Bilim</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <ul class="navbar-nav logo">
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link navbar-brand"
+                  data-bs-dismiss="offcanvas"
+                  >Yaz Gelsin</a
+                >
+              </li>
+            </ul>
+
+            <ul class="navbar-nav myAccount">
+              <li class="nav-item me-3">
+                <a href="#" class="nav-link"><span id="user"></span></a>
+              </li>
+              <li class="nav-item d-inline">
+                <a class="nav-link" data-bs-dismiss="offcanvas"
+                  ><i class="fa-solid fa-xmark"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div
+        id="offcanvasCarousel"
+        class="carousel slide carousel-fade offcanvasCarousels"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <!-- data-bs-interval="2000" = geçiş süresini ayarlar -->
+          <div class="carousel-item active" data-bs-interval="8000">
+            <video autoplay loop muted playsinline>
+              <source src="img/bilim (2).mp4" type="video/mp4" />
+            </video>
+
+            <div class="carousel-caption badge">
+              <h2 class="badge">BİLİM</h2>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="8000">
+            <video autoplay loop muted playsinline>
+              <source src="img/bilim-4.mp4" type="video/mp4" />
+            </video>
+            <div class="carousel-caption badge">
+              <h2 class="badge">BİLİM</h2>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="8000">
+            <video autoplay loop muted playsinline>
+              <source src="img/bilim-5.mp4" type="video/mp4" />
+            </video>
+            <div class="carousel-caption badge">
+              <h2 class="badge">BİLİM</h2>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href=".offcanvasCarousels"
+          class="carousel-control-prev"
+          data-bs-slide="prev"
+        >
+          <!-- geri ok tuşu ikonu  -->
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a
+          href=".offcanvasCarousels"
+          class="carousel-control-next"
+          data-bs-slide="next"
+        >
+          <!-- ileri ok tuşu ikonu  -->
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+
+      <div class="container">
+        <div class="row my-5">
+          <div class="col-lg-8 col-12">
+            <div class="row">
+              <div class="col-12 cols">
+                <div class="card">
+                  <a href="#" class="category">
+                    <img
+                      src="img/füzyon.png"
+                      alt="yapay zeka"
+                      class="card-img-top"
+                    />
+                    <span>Bilim</span>
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a href="#">
+                        Nihayet Başarılan "Füzyon Ateşlemesi" Gerçekten Devrim
+                        mi?
+                      </a>
+                    </h5>
+                    <div class="card-text">
+                      Son bir iki gündür nükleer füzyon devrimi haberlerini
+                      duymuşsunuzdur. Bu gerçekten müthiş bir başarı ama işler
+                      haberlerde heleki Türkiyedeki gazetelerin haber
+                      köşelerinde yazıldığı gibi değil. Gelin başarılarının tam
+                      olarak ne olduğuna ve evlerimizin ne zaman füzyon
+                      reaktörüyle ısıtmaya başlayacağımıza bir bakış atalım.
+                    </div>
+                    <p class="card-text mt-4">
+                      <small
+                        ><img
+                          src="img/profil.jpg"
+                          alt="emreaydin"
+                          class="card-profil"
+                      /></small>
+                      <small>by emreaydin</small>
+                      <small><i class="fa-regular fa-comment-dots"></i></small>
+                      <small>Ağustos 15, 2023</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="contentBlogAdd" class="row"></div>
+          </div>
+
+          <div class="col-lg-4 col-12 my-5 my-lg-0">
+            <div class="card aboutUs">
+              <div class="card-header">
+                <img src="img/yaz gelsin.jpg " class="img-fluid mt-2 w-100" />
+              </div>
+
+              <div class="card-body text-center">
+                <h5 class="card-title mt-2">Biz Kimiz?</h5>
+                <div class="card-text">
+                  <p class="mt-3">
+                    Yaz Gelsin'e hoş geldiniz sevgili blog yazıcıları. Biz
+                    Herkesin görüşüne, bilgisine, hikayelerine ve içeriklerine
+                    önem veren bir topluluğuz. Misyonumuz içinizde olan o blog
+                    yazıcılığı ruhunuzu herkesle paylaşmak ve o konu hakkında
+                    saygı içerisinde tartışmak. Vizyonumuz kendi bloğunuzu
+                    oluşturup siz değerli blog yazıcılarını farklı konularda
+                    bilgi sahibi olmak.
+                  </p>
+                  <p class="mt-4">Kendi bloğunu yazan seçkin ruhlar...</p>
+                  <p class="mt-4">Daha ne duruyorsun yaz gelsin ozaman</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer id="main-footer" class="text-light mt-auto">
+        <div class="container">
+          <div class="footer-container">
+            <div class="d-flex">
+              <div class="logo">
+                <ul class="list-inline list-group-flush">
+                  <li class="list-inline-item"><a href="#">Yaz Gelsin</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-item">
+                <ul class="list-inline list-group-flush">
+                  <li class="list-inline-item">
+                    <a
+                      href="#"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#artsOffcanvas"
+                      >Sanat</a
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      href="#"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#technologyOffcanvas"
+                      >Teknoloji</a
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      href="#"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#scienceOffcanvas"
+                      >Bilim</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer-social">
+              <ul class="list-inline list-group-flush">
+                <li class="list-inline-item">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <div class="copyright">
+            <p>© 2023 Tüm Hakları Saklıdır – Yazgelsin.com</p>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <footer id="main-footer" class="text-light">
+      <div class="container">
+        <div class="footer-container">
+          <div class="d-flex">
+            <div class="logo">
+              <ul class="list-inline list-group-flush">
+                <li class="list-inline-item"><a href="#">Yaz Gelsin</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-item">
+              <ul class="list-inline list-group-flush">
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#artsOffcanvas"
+                    >Sanat</a
+                  >
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#technologyOffcanvas"
+                    >Teknoloji</a
+                  >
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#scienceOffcanvas"
+                    >Bilim</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-social">
+            <ul class="list-inline list-group-flush">
+              <li class="list-inline-item">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="copyright">
+          <p>© 2023 Tüm Hakları Saklıdır – Yazgelsin.com</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

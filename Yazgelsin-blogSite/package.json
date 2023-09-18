@@ -1,0 +1,17 @@
+{
+  "name": "2.uygulama-signup-and-addingelements",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass -w scss -o public/css --output-style compressed",
+    "login": "node-sass -w scss -o public/css --output-style compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "node-sass": "^9.0.0"
+  }
+}

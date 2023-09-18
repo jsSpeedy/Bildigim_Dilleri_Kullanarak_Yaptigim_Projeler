@@ -1,0 +1,359 @@
+@media (min-width: 1400px) {
+  .login-slide {
+    .formBx {
+      left: 850px !important;
+    }
+  }
+
+  .formBx {
+    left: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel-caption {
+    h2 {
+      font-size: 3.5rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
+
+  #content,
+  #artsOffcanvas {
+    .row .cols {
+      margin-top: 3rem !important;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 576px) {
+  .carousel-caption {
+    left: 50% !important;
+    top: 60% !important;
+    right: 0% !important;
+    bottom: 0 !important;
+    transform: translate(-50%, -50%);
+  }
+
+  .dropdown-content {
+    min-width: 145px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .login-slide {
+    .formBx {
+      left: 700px !important;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .carousel-caption {
+    h2 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+
+  #content,
+  #artsOffcanvas {
+    .row .cols {
+      margin-top: 3rem !important;
+    }
+  }
+
+  .login-slide {
+    .formBx {
+      left: 540px !important;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .carousel-caption {
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  #content,
+  #artsOffcanvas {
+    .cols-aboutUs {
+      margin-top: 3rem !important;
+    }
+  }
+
+  #main-footer {
+    .footer-container {
+      flex-direction: column;
+
+      > :first-child {
+        flex-direction: column;
+
+        .logo {
+          text-align: center;
+          margin: 0 !important;
+        }
+      }
+    }
+  }
+
+  #blogging {
+    .blog {
+      margin-bottom: 3rem;
+    }
+
+    .aboutUs {
+      margin-bottom: 3rem;
+    }
+  }
+
+  .login-slide {
+    .formBx {
+      left: 300px !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .offcanvas-body,
+  .offcanvas-header {
+    background-color: #232323;
+    color: #fff;
+  }
+
+  .offcanvas-header .btn-close {
+    color: #fff !important;
+  }
+
+  header {
+    height: 60vh;
+  }
+
+  .carousel-item video {
+    height: 60vh;
+  }
+
+  header {
+    .loginSearch {
+      flex-direction: initial !important;
+    }
+  }
+
+  #content,
+  #artsOffcanvas {
+    .card-img-overlay .row {
+      margin-bottom: 3rem !important;
+    }
+  }
+
+  #blogOffcanvas {
+    .myAccount {
+      flex-direction: row;
+    }
+  }
+
+  .login-slide {
+    .formBx {
+      left: 245px !important;
+    }
+  }
+
+  .box {
+    padding: 30px !important;
+
+    h2 {
+      font-size: 1rem;
+    }
+  }
+
+  .formBx {
+    left: 20px;
+    width: 250px;
+
+    #loginForm {
+      padding: 0 30px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-caption {
+    display: none;
+  }
+
+  .badge {
+    display: inline-block;
+    font-size: 1rem !important;
+  }
+
+  .navbar {
+    .navbar-toggler {
+      font-size: 14px;
+    }
+
+    .logo a {
+      font-size: 20px !important;
+      margin: 0;
+    }
+
+    .nav-item .nav-link {
+      font-size: 14px;
+    }
+  }
+
+  header {
+    height: 40vh;
+  }
+
+  .carousel-item video {
+    height: 40vh;
+  }
+
+  .dropdown-content {
+    min-width: 118px;
+  }
+
+  .login-slide {
+    .formBx {
+      left: 280px !important;
+    }
+  }
+
+  .box {
+    h2 {
+      font-size: 0.9rem;
+    }
+  }
+
+  .formBx {
+    width: 210px;
+
+    #registerForm {
+      padding: 0 20px;
+    }
+  }
+
+  #offcanvasCarousel {
+    height: 40vh;
+
+    .carousel-item video {
+      height: 40vh;
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .login-slide {
+    .formBx {
+      left: 250px !important;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .login-slide {
+    .formBx {
+      left: 240px !important;
+    }
+  }
+
+  .formBx {
+    width: 188px;
+
+    #registerForm {
+      padding: 0 20px;
+    }
+
+    #loginForm {
+      padding: 0 20px;
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  .login-slide {
+    .formBx {
+      left: 220px !important;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .login-slide {
+    .formBx {
+      left: 200px !important;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .login-slide {
+    .formBx {
+      left: 180px !important;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .box {
+    padding: 0 20px !important;
+  }
+
+  .formBx {
+    width: 170px;
+    left: 5px;
+  }
+  .login-slide {
+    .formBx {
+      left: 170px !important;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .login-slide {
+    .formBx {
+      left: 160px !important;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .formBx {
+    width: 170px;
+  }
+
+  .login-slide {
+    .formBx {
+      left: 160px !important;
+    }
+  }
+}
